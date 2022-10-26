@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/tablaDinamica.css">
+    <title>Mitre Petshop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img/logo.webp" height="50px" alt="">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="administracion.html">Administracion</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title">
+        <h1>Administracion</h1>
+        <img src="img/animals.png" alt="" class="imgCenter">
+    </div>
+
+
+    <main>
+        <div class="container" id="divFormulario">
+            <fieldset>
+                <legend>Información del anuncio</legend>
+                <form class="formulario">
+                    <label for="txtTitulo">Título</label>
+                    <input type="text" name="titulo" id="txtTitulo" placeholder="Titulo">
+                    <small></small>
+                    <br>
+
+                    <label for="txtDescripcion">Descripción</label>
+                    <input type="text" name="descripcion" id="txtDescripcion" placeholder="Descripcion">
+                    <small></small>
+                    <br>
+
+                    <label for="radioAnimal">Animal</label>
+                    <input type="radio" name="animal" id="radioAnimal" value="perro" checked>Perro
+                    <input type="radio" name="animal" id="radioAnimal" value="Gato">Gato
+                    <small></small>
+                    <br>
+
+                    <label for="txtPrecio">Precio</label>
+                    <input type="text" name="precio" id="txtPrecio" placeholder="Precio">
+                    <small></small>
+                    <br>
+
+                    <div>
+                        <div class="controlesAnimal">
+                            <!-- <label for="txtRaza">Raza</label> -->
+                            <img src="img/raza.png" height="25px" alt="" class="imgControles">
+                            <input type="text" name="raza" id="txtRaza" placeholder="Raza">
+                            <small></small>
+                            <br>
+                        
+                            <!-- <label for="fechaNac">Fecha de Nacimiento</label> -->
+                            <img src="img/fecha_nacimiento.png" height="25px" alt="" class="imgControles">
+                            <input type="date" name="fecha_nacimiento" id="fechaNac">
+                            <small></small>
+                            <br>
+                        
+                            <!-- <label for="selVacunas">Vacunas</label> -->
+                            <img src="img/vacuna.png" height="25px" alt="" class="imgControles">
+                            <select name="vacuna" id="selVacunas">
+                                <option value="si">Si</option>
+                                <option value="no">No</option>
+                            </select>
+                            <small></small>
+                            <br>
+                        </div>
+                    </div>
+
+                    <small id="alertSubmit"></small>
+                    <input type="submit" value="Cargar" name="btnCargar" id="btnCargar">
+                    <input type="reset" value="Borrar Formulario" name="btnResetForm" id="btnResetForm">
+                    <button id="btnEliminar" class="escondido">Eliminar Anuncio</button>
+                </form>
+
+            </fieldset>
+        </div>
+        <div class="giratorio escondidoSpinner">
+            <img src="img/raza.png" width="50px" alt="" class="center" id="spinner">
+        </div>
+        <!-- <div class="loader center" id="spinner" ></div> -->
+        <div class="divTabla"></div>
+
+    </main>
+
+    <script src="./js/app.js" type="module"></script>
+    <!-- <script src="./js/localStorage.js" type="module"></script> -->
+</body>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="administracion.html">Administracion</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</footer>
+
+</html>

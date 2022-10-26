@@ -1,0 +1,285 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: rgb(223, 172, 89);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+footer>nav {
+    background-color: rgb(188, 69, 69);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    padding: 0px 10px;
+}
+
+h1 {
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.imgCenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+footer>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    margin: 0px 2px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 3px;
+}
+
+/* .index {    
+    background-image: url("../img/perrosgatos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;    
+} */
+
+.bodyIndex{
+    background-image: url("../img/perrosgatos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;    
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(243, 243, 243);
+}
+
+
+#divFormulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    /* border-spacing: 0; */
+    table-layout: fixed;
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+th {
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: rgb(79, 79, 79);
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 3px 5px;
+    word-wrap: break-word;
+    /* border-radius: 5px; */
+}
+
+th,
+td:first-letter {
+    text-transform: capitalize
+}
+
+fieldset {
+    padding: 15px;
+    margin: 25px;
+}
+
+legend {
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+input[type=radio] {
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+input[type=text],
+input[type=number] {
+    width: 95%;
+    height: 30px;
+    border: 0;
+    font-size: 12pt;
+    border-radius: 6px;
+    outline: none;
+    background-color: rgb(227, 227, 227);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 2px;
+}
+
+.imgControles{
+    display: flex;
+}
+
+.controlesAnimal{
+    display: flex;    
+    margin: 5px;
+    
+    margin-bottom: 10px;   
+    
+}
+
+label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+fieldset {
+    padding-bottom: 10px;
+    border-radius: 6px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Validaciones */
+.inputError {
+    border: 1px solid red;
+    box-shadow: 0 0 5px red;
+}
+
+.danger {
+    color: red;
+    font-weight: bold;
+}
+
+small {
+    display: block;
+    font-size: x-small;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.escondido {
+    visibility: hidden;
+}
+
+.visibleSpinner {
+    display: block;
+}
+
+.escondidoSpinner {
+    display: none;
+}
+
+
+
+input[type=submit],
+input[type=reset],
+button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+}
+
+#btnCargar {
+    background-color: #058209;
+}
+
+#btnResetForm {
+    background-color: rgb(35, 35, 114);
+}
+
+#btnEliminar {
+    background-color: rgb(220, 63, 16);
+}
+
+
+.loader {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    animation: rotation 2s linear infinite;   
+}
+
+
+.giratorio {
+    display: flex;
+    animation: rotation 2s linear infinite;
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*  ----------------    ANUNCIOS TARJETAS   ----------------*/
+
+figure {
+    margin: 5px;
+}
+
+#cards {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 20px;
+    align-self: center;
+
+}
+
+.card {
+    margin: 3px;
+    padding: 3px;
+    background-color: rgb(210, 210, 210);
+    display: inline-block;
+    width: 300px;
+}
+
